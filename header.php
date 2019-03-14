@@ -34,7 +34,10 @@ src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
  </div>
  <div class="container">
  <div class="blog-header">
-<h1 class="blog-title">The Bootstrap Blog</h1>
-<p class="lead blog-description">The official example template of
-creating a blog with Bootstrap.</p>
- </div> 
+<h1 class="blog-title"><div class="blog-header">
+ <h1 class="blog-title">
+ <a href="<?php bloginfo( 'wpurl' );?>"><?php echo
+get_bloginfo( 'name' ); ?></a></h1>
+ <p class="lead blog-description"><?php echo get_bloginfo(
+'description' ); ?></p>
+</div>  
